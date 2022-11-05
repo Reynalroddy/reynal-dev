@@ -25,7 +25,7 @@ const [click,setClick] = useState(false);
 <Links classes='absolute bottom-2 left-1/4 font-medium  text-md' link='/work' title='Work'/>
 <Links classes='absolute bottom-2 right-1/4 font-medium  text-md' link='/project' title='Fun Project'/>
 <button className={`absolute ${click?`tp`:`top-1/2 left-1/2`}
-${click?`w-28 h-28`:`w-36 h-36`}  trans-y  cursor-pointer -translate-x-1/2 -translate-y-1/2 rounded-full flex flex-col items-center justify-center border-none outline-none`} onClick={()=>setClick(!click)}>
+${click?`w-24 h-24`:`w-32 h-32`}  trans-y  cursor-pointer -translate-x-1/2 -translate-y-1/2 rounded-full flex flex-col items-center justify-center border-none outline-none`} onClick={()=>setClick(!click)}>
 <FaYinYang className='w-full h-full animate-spin'/>
 <span className={`${click?'hidden':'text-sm font-medium'}`}>click here</span>
 </button>
