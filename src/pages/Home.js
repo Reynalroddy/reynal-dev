@@ -16,14 +16,16 @@ const [click,setClick] = useState(false);
     <div className='h-screen relative'>
 <Logo/>
    <PowerBtn/>
+   { click &&
    <DarkBg click={click}/>
+}
    <Socials/>
 <Links classes='absolute top-8 right-0 font-medium text-md' link='/about' title='About'/>
 <Links classes='absolute top-1/2 right-0 font-medium rotate-90 text-md' link='/skills' title='My Skills'/>
 <Links classes='absolute bottom-2 left-1/4 font-medium  text-md' link='/work' title='Work'/>
 <Links classes='absolute bottom-2 right-1/4 font-medium  text-md' link='/project' title='Fun Project'/>
 <button className={`absolute ${click?`tp`:`top-1/2 left-1/2`}
-${click?`w-28 h-28`:`w-48 h-48`}  trans-y  cursor-pointer -translate-x-1/2 -translate-y-1/2 rounded-full flex flex-col items-center justify-center border-none outline-none`} onClick={()=>setClick(!click)}>
+${click?`w-28 h-28`:`w-36 h-36`}  trans-y  cursor-pointer -translate-x-1/2 -translate-y-1/2 rounded-full flex flex-col items-center justify-center border-none outline-none`} onClick={()=>setClick(!click)}>
 <FaYinYang className='w-full h-full animate-spin'/>
 <span className={`${click?'hidden':'text-sm font-medium'}`}>click here</span>
 </button>

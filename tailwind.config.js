@@ -43,6 +43,7 @@ module.exports = {
         heading:"#2e2e2e",
         red:"red",
         txColor:"var(--textColor)",
+        darks:"var(--drk-color)"
       },
       borderColor:{
 black:"var( --border-color)",
